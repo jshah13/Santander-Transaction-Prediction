@@ -17,9 +17,10 @@ Each row represents one customer transaction and each column is a feature. We ar
 As described above, Santander's mission is to help people and businesses prosper. Therefore the major questions they aim to find the answer to the questions: is the customer satisfied? Will a customer buy this product? Can a customer pay this loan? These are the most common questions that are asked by many businesses and financial intermediaries. Therefore, in this competition we hope to predict whether a particular customer would have completed a transaction based on some arbitrary, unknown variables.
 
 ## Metric
-Ultimately, we want to build a model that can predict the target value accurately and the measure we will use to quantify this is the area under the ROC curve. The Receiving Operating Characteristic (ROC) curve is a graphical plot that illustrates the diagnostic ability of a binary classifier system by plotting the true positive rate (TPR) against the false positive rate (FPR) at various threshold setting. $$TPR = \frac{TP}{TP + FN}$$
+Ultimately, we want to build a model that can predict the target value accurately and the measure we will use to quantify this is the area under the ROC curve. The Receiving Operating Characteristic (ROC) curve is a graphical plot that illustrates the diagnostic ability of a binary classifier system by plotting the true positive rate (TPR) against the false positive rate (FPR) at various threshold setting.
 
-![image]("http://www.sciweavers.org/tex2img.php?eq=%24%24TPR%20%3D%20%5Cfrac%7BTP%7D%7BTP%20%2B%20FN%7D%24%24&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0")
+![render](https://user-images.githubusercontent.com/45533954/92144562-caf18480-ee0e-11ea-86a2-15ae676a5557.png)
 
-$$FPR = \frac{FP}{TN + FP}$$
+![render (1)](https://user-images.githubusercontent.com/45533954/92144619-df358180-ee0e-11ea-9469-fe6933df0a4a.png)
+
 The closer the area under the curve is to 1, the better the model is, while as it approaches 0, this signifies a poorer model. When the AUC is 0.5, this means the model ahs no class separation whatsoever i.e. it is similar to flipping a coin and therefore no better than random choice.
