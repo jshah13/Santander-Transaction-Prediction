@@ -25,6 +25,6 @@ Ultimately, we want to build a model that can predict the target value accuratel
 The closer the area under the curve is to 1, the better the model is, while as it approaches 0, this signifies a poorer model. When the AUC is 0.5, this means the model ahs no class separation whatsoever i.e. it is similar to flipping a coin and therefore no better than random choice.
 
 ## Conclusion
-We have trained the data using several models and use the Gaussian Naive Bayes model since as shown below, this provides the best performance (albeit with a large standard deviation). One possible way to improve performance further is through the use of neural networks, since the amount of data here is large.
+We have trained the data using several models and use the Gaussian Naive Bayes model since as shown below, this provides the best performance (albeit with a large standard deviation). One possible way to improve performance further is through the use of neural networks, since the amount of data here is large. This led to a test score of 0.899% which at the time ranked in the top 25% of submissions.
 
 ![image](https://user-images.githubusercontent.com/45533954/92143920-da240280-ee0d-11ea-91cc-20a0277e143c.png)
